@@ -4,6 +4,12 @@
 
 ## config.yaml
 ```
+server:
+  port : 8000
+  version: 1.0
+  secretKey: something-very-secret
+  adminJwtSecret: admin-secret
+
 sql:
   host : 127.0.0.1
   port : 3306
@@ -11,14 +17,15 @@ sql:
   password : 123456
   database : GOLANG
 
-server:
-  port : 8000
-
-JWT:
-  secretKey : secret_key
-
 redis:
   Addr : localhost:6379
   password : 123456
   DB : 0
+
+OSS:
+  EndPoint :
+  AccessKey :
+  SecretKey :
+  Bucket :
+  Region :
   ```
